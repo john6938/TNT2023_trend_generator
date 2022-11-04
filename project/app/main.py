@@ -2,7 +2,7 @@ import random
 
 MAX_SENTENCE_NUM = 4
 MIN_BANANA_NUM = 0
-MAX_BANANA_NUM = 100
+MAX_BANANA_NUM = 10
 
 
 def generate_banana_num():
@@ -43,3 +43,5 @@ for i in range(MAX_SENTENCE_NUM):
     sentences.append(" ".join([subject, verb]))
     sentences[i] += "."
     print(sentences[i])
+
+print(f"Number of bananas: {num_bananas}")
