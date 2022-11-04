@@ -43,3 +43,5 @@ for i in range(MAX_SENTENCE_NUM):
     sentences.append(" ".join([subject, verb]))
     sentences[i] += "."
     print(sentences[i])
+
+print(f"Number of bananas: {num_bananas}")
