@@ -76,3 +76,5 @@ else:
     Re4 = str(result4)
     print('The number of students rise from ' + val4 + ' in ' + month4 + ' by ' + Re4 + ' to ' + val5 + ' in ' + month5)
 
+
+print(f"Number of bananas: {num_bananas}")
