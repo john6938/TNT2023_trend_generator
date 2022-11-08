@@ -1,3 +1,5 @@
+# Task 2 pseudo code
+
 import random
 
 MAX_SENTENCE_NUM = 4
