@@ -2,7 +2,7 @@ import random
 
 MAX_SENTENCE_NUM = 4
 MIN_BANANA_NUM = 0
-MAX_BANANA_NUM = 100
+MAX_BANANA_NUM = 10
 
 
 def generate_banana_num():
