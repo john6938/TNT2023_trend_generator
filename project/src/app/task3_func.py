@@ -5,22 +5,19 @@ INFINITIVE_VERB: dict = {"go": "went", "do": "did", "have": "had"}
 VERB_GROUP: dict
 
 
-def connect_two_sentence(change1: str, change2: str) -> bool:
+def should_connect_two_sentences(change1: int, change2: int) -> bool:
     """2つの文章を繋げるかどうかを判定する。
         Determine if the two sentences can be connected.
 
     Args:
-        change1 (str): 1つ目の変動 First Change
-        change2 (str): 2つ目の変動 Second Change
+        change1 (int): 1つ目の変動 First Change
+        change2 (int): 2つ目の変動 Second Change
 
     Returns:
         bool: 1つ目と2つ目の変動が同じ場合True
             If two values are the same, return True.
     """
-    if change1 == change2:
-        return True
-    else:
-        return False
+    return change1 == change2
 
 
 def append_min_max(number: float, sentence: str) -> str:
