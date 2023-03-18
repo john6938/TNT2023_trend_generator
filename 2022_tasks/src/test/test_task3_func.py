@@ -1,4 +1,4 @@
-from app.task3_func import (
+from main.task3_func import (
     append_date_dif,
     append_min_max,
     append_verb,

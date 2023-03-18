@@ -5,15 +5,15 @@ from verb_groups import VerbGroups
 
 
 class StatisticValues:
-    __statistic_values: list
+    __statistic_values: list[float]
 
-    def __init__(self, statistic_values: list) -> None:
+    def __init__(self, statistic_values: list[float]) -> None:
         self.__statistic_values = statistic_values
 
     def add(self, statistic_value: float) -> StatisticValues:
         return StatisticValues([self.__statistic_values, statistic_value])
 
-    def add_all(self, statistic_values: list) -> StatisticValues:
+    def add_all(self, statistic_values: list[float]) -> StatisticValues:
         return StatisticValues(self.__statistic_values + statistic_values)
 
     def generate_descriptive_verb(
