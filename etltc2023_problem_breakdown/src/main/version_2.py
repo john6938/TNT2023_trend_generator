@@ -4,14 +4,14 @@ VERB_GROUPS: tuple = (
 )
 
 
-def describe_difference(num_before: int, num_after: int, verb_group_id: int) -> str:
+def describe_difference(num_before: int, num_after: int, verb_group_id: int) -> tuple[str, int]:
     description: str = ""
     if num_after > num_before:
-        description = VERB_GROUPS[verb_group_id % VERB_GROUPS.len()][0]
+        description = VERB_GROUPS[verb_group_id % len(VERB_GROUPS)][0]
     elif num_after == num_before:
-        description = VERB_GROUPS[verb_group_id % VERB_GROUPS.len()][1]
+        description = VERB_GROUPS[verb_group_id % len(VERB_GROUPS)][1]
     else:
-        description = VERB_GROUPS[verb_group_id % VERB_GROUPS.len()][2]
+        description = VERB_GROUPS[verb_group_id % len(VERB_GROUPS)][2]
 
     verb_group_id += 1
-    return description
+    return description, verb_group_id

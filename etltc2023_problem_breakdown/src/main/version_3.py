@@ -18,7 +18,7 @@ def describe_difference(num_before: float, num_after: float, verb_group_id: int)
 
 
 def reinitialize_group_id(group_id: int, group: Sized) -> int:
-    return group_id + 1 % len(group)
+    return (group_id + 1) % len(group)
 
 
 def check_and_append_verb(
@@ -27,10 +27,10 @@ def check_and_append_verb(
     difference_before: int,
     difference_after: int,
     verb_group_id: int,
-) -> tuple:
+) -> tuple[str, int]:
     if difference_before == difference_after:
         new_verb_group_id = reinitialize_group_id(verb_group_id, VERB_GROUPS)
-        return describe_difference(num_before, num_after, new_verb_group_id), new_verb_group_id
+        return (describe_difference(num_before, num_after, new_verb_group_id), new_verb_group_id)
 
     return (
         describe_difference(num_before, num_after, verb_group_id),
