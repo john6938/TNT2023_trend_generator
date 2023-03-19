@@ -1,5 +1,4 @@
 from __future__ import annotations
-from collections import Sized
 
 # Version 3
 VERB_GROUPS: tuple = (

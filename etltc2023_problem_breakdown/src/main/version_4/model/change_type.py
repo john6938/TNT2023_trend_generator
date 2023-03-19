@@ -1,5 +1,5 @@
+from __future__ import annotations
 from value_change import ValueChange
-from change_type import ChangeType
 
 
 class ChangeType:
