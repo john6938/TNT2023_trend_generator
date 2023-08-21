@@ -11,7 +11,7 @@ class StatisticValues:
         self.__statistic_values = statistic_values
 
     def add(self, statistic_value: float) -> StatisticValues:
-        return StatisticValues([self.__statistic_values, statistic_value])
+        return StatisticValues(self.__statistic_values + [statistic_value])
 
     def add_all(self, statistic_values: list[float]) -> StatisticValues:
         return StatisticValues(self.__statistic_values + statistic_values)
