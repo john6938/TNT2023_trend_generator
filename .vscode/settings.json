@@ -1,0 +1,7 @@
+{
+  "python.testing.pytestArgs": [
+    "etltc2023_problem_breakdown"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
+}

@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "[python]":{
+
+    },
+    "python.linting.mypyEnabled": true
+  }
+}
